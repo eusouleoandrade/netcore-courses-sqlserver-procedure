@@ -16,9 +16,6 @@ builder.Services.AddApiVersioningExtension();
 // Configure app
 var app = builder.Build();
 
-IServiceScope scope = app.Services.CreateScope();
-scope.ServiceProvider.ConfigureDatabaseBootstrap();
-
 app.UseCorrelationIdHandleExtensions();
 
 app.UseCors(option => option.AllowAnyOrigin()

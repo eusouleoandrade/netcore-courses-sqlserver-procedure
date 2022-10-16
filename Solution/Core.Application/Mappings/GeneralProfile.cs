@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Core.Application.Dtos.Queries;
-using Core.Application.Dtos.Requests;
 using Core.Application.Dtos.Responses;
 using Core.Domain.Entities;
 
@@ -10,21 +9,8 @@ namespace Core.Application.Mappings
     {
         public GeneralProfile()
         {
-            CreateMap<Todo, TodoQuery>();
-
-            CreateMap<CreateTodoUseCaseRequest, Todo>();
-
-            CreateMap<Todo, CreateTodoUseCaseResponse>();
-
-            CreateMap<CreateTodoRequest, CreateTodoUseCaseRequest>();
-
-            CreateMap<CreateTodoUseCaseResponse, CreateTodoQuery>();
-
-            CreateMap<Todo, GetTodoUseCaseResponse>().ReverseMap();
-
-            CreateMap<GetTodoUseCaseResponse, GetTodoQuery>();
-
-            CreateMap<UpdateTodoRequest, UpdateTodoUseCaseRequest>();
+            CreateMap<DurationMinutesCourses, GetDurationMinutesCoursesUseCaseResponse>();
+            CreateMap<GetDurationMinutesCoursesUseCaseResponse, GetDurationMinutesCoursesQuery>();
         }
     }
 }

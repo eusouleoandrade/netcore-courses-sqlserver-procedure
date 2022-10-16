@@ -5,25 +5,21 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{AA0D26F2-3A36-465D-B3E4-C01FA1610659}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A3595365-6333-452E-B7A7-C17941C73874}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{E8DADD2A-F69B-4C50-B3DD-EE88BF7CEBCB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{8FBCF0AF-0047-4418-9B86-48D89D124E60}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{249B49F2-0426-4FB7-8C3D-339F8C4361E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Application", "Core.Application\Core.Application.csproj", "{5C43A1C6-D4D0-495F-A026-8064217DC2EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Application", "Core.Application\Core.Application.csproj", "{5C43A1C6-D4D0-495F-A026-8064217DC2EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Domain", "Core.Domain\Core.Domain.csproj", "{A4D80638-6A1D-4571-8263-5968BF22E47E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Domain", "Core.Domain\Core.Domain.csproj", "{A4D80638-6A1D-4571-8263-5968BF22E47E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.Persistence", "Infra.Persistence\Infra.Persistence.csproj", "{01ED74ED-A246-47D0-9C45-0C58E1927A65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.Persistence", "Infra.Persistence\Infra.Persistence.csproj", "{01ED74ED-A246-47D0-9C45-0C58E1927A65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.Notification", "Infra.Notification\Infra.Notification.csproj", "{8C0A6B73-CD07-4843-B843-1910B12B4FCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.Notification", "Infra.Notification\Infra.Notification.csproj", "{8C0A6B73-CD07-4843-B843-1910B12B4FCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.WebApi", "Presentation.WebApi\Presentation.WebApi.csproj", "{C1A83016-E975-42C6-8A3F-291E4A67B4D0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Unit", "Tests.Unit\Tests.Unit.csproj", "{1ADD1B7A-05B4-419B-9108-ADB91977EE70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation.WebApi", "Presentation.WebApi\Presentation.WebApi.csproj", "{C1A83016-E975-42C6-8A3F-291E4A67B4D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,10 +47,6 @@ Global
 		{C1A83016-E975-42C6-8A3F-291E4A67B4D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1A83016-E975-42C6-8A3F-291E4A67B4D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1A83016-E975-42C6-8A3F-291E4A67B4D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1ADD1B7A-05B4-419B-9108-ADB91977EE70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1ADD1B7A-05B4-419B-9108-ADB91977EE70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1ADD1B7A-05B4-419B-9108-ADB91977EE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1ADD1B7A-05B4-419B-9108-ADB91977EE70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,7 +60,6 @@ Global
 		{01ED74ED-A246-47D0-9C45-0C58E1927A65} = {8FBCF0AF-0047-4418-9B86-48D89D124E60}
 		{8C0A6B73-CD07-4843-B843-1910B12B4FCD} = {8FBCF0AF-0047-4418-9B86-48D89D124E60}
 		{C1A83016-E975-42C6-8A3F-291E4A67B4D0} = {249B49F2-0426-4FB7-8C3D-339F8C4361E8}
-		{1ADD1B7A-05B4-419B-9108-ADB91977EE70} = {A3595365-6333-452E-B7A7-C17941C73874}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F62CCD8-0B0D-4333-AC59-4BE2EB26B778}

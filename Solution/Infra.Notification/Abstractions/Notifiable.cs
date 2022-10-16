@@ -16,9 +16,9 @@ namespace Infra.Notification.Abstractions
         public void AddErrorNotification(string key, string message, params object[] parameters)
             => _errorNotifications.Add(new NotificationMessage(key, string.Format(message, parameters)));
 
-        public void AddErrorNotifications(params Notifiable[] objects)
+        public void AddErrorNotifications(params INotifiable[] objects)
         {
-            foreach (Notifiable notifiable in objects)
+            foreach (INotifiable notifiable in objects)
                 _errorNotifications.AddRange(notifiable.ErrorNotifications);
         }
 

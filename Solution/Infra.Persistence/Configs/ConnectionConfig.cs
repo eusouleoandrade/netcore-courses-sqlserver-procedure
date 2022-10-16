@@ -1,16 +1,16 @@
-﻿using Microsoft.Data.Sqlite;
+﻿using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
 namespace Infra.Persistence.Configs
 {
     public abstract class ConnectionConfig : IDisposable
     {
-        protected readonly SqliteConnection _connection;
+        protected readonly SqlConnection _connection;
 
         protected ConnectionConfig(IConfiguration configuration)
         {
             string connectionString = configuration.GetConnectionString("DefaultConnection");
-            _connection = new SqliteConnection(connectionString);
+            _connection = new SqlConnection(connectionString);
         }
 
         public void Dispose()
